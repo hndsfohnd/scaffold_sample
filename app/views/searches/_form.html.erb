@@ -1,0 +1,30 @@
+<div class="bodytag">
+<%= form_with(model: search, local: true) do |form| %>
+  <% if search.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(search.errors.count, "error") %> prohibited this search from being saved:</h2>
+
+      <ul>
+      <% search.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field amadeus__comand">
+    <%= form.label :アマデウスコマンド ,class:"amadeus__label"%>
+    <%= form.text_field :amadeus ,class:"amadeus"%>
+    <%= form.label :コマンド説明 ,class:"amadeus__label"%>
+    <%= form.text_field :description ,class:"amadeus description"%>    
+    <%= form.label :アクセス比較コマンド ,class:"amadeus__label"%>
+    <%= form.text_field :axess ,placeholder:'ブランク可' ,class:"amadeus"%>
+    <%= form.label :インフィニ比較コマンド ,class:"amadeus__label"%>
+    <%= form.text_field :infini ,placeholder:"ブランク可" ,class:"amadeus"%>
+  </div>
+
+  <div class="actions submit__button">
+  <%= form.submit type="登録する", class:"submit__new" %>
+  
+  </div>
+  </div>
+<% end %>

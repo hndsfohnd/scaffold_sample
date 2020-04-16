@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="search__comand">コマンドの検索</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+     <%= form_with url: result_searches_path, method: :get  do |form| %>
+     <div class="form-group">
+      <input type='text' name="keyword" id="keyword" class="form-control" placeholder="検索文字を入力ください">
+    </div>
+    <div class="result__zero plusclass">検索結果一覧</div>
+
+    <p id="result"></p>
+
+
+    <%end%>
+
+  <tbody>
+  <div class="allsearch">登録コマンド一覧<div>
+       <table border="2">
+    <tr>
+      <th>amadeusコマンド</th>
+      <th>コマンド説明</th>
+      <th>アクセスコマンド比較</th>
+      <th>インフィニコマンド比較</th>
+    </tr>
+
+      <% @searches.each do |search| %>
+          <tr>
+        <td>
+        <%= search.amadeus %>
+        </td>
+      <td><%= search.description %></td>
+        
+        <td><%if search.axess%>
+          <%= search.axess %>
+        <% else %>
+          <%= "----"%> 
+        <%end%></td>
+
+      <td>
+      <%if search.infini%>
+      <%= search.infini %>
+      <% else %>
+      <%= "----"%> 
+      <%end%>
+     </td>
+
+    </tr>
+ 
+  <%end%>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '新規登録', new_search_path %>
+<%= link_to 'トップページ', books_path %>

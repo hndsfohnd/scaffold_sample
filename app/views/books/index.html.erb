@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="index__toppage"><span>a</span><span>m</span><span>a</span><span>d</span><span>e</span><span>u</span><span>s</span></h1>
+<div class="index__sepa">
+<div class="index__one">
+<div class="command">コマンド問題</div>
+<div class="amadeus__question">
+<%= link_to 'アマデウスコマンド問題', book_path(@randam_book) ,:style=>"font-size:18px;" ,class:"first"%></div>
+<p class="amadeus__create">問題はランダムで表示されます</p>
+<%= link_to 'アマデウスコマンド問題作成', new_book_path ,class:"amadeus__create",:style=>"font-size:18px;,background-color:white;" ,class:"second"%>
+<p class="amadeus__create">アマデウスのコマンド問題を作成できます。</p>
+
+</div>
+<div class="index__one index__two">
+<div class="command">コマンド検索</div>
+<div class="amadeus__question">
+<%= link_to 'アマデウスコマンド検索', searches_path ,:style=>"font-size:18px;" ,class:"fours"%></div>
+<p class="amadeus__create">amadeus検索コマンド（infini/axcessコマンド比較）</p>
+
+
+<%= link_to 'アマデウス検索登録', new_search_path ,:style=>"font-size:18px;" ,class:"five third"%>
+<p class="amadeus__create">amadeus検索コマンドの登録（infini/axcessコマンド）</p>
+</div>
+</div>

@@ -1,0 +1,150 @@
+// Place all the styles related to the searches controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#hidden{
+  display: none;
+}
+.color{
+  color: red;
+  width: 80%;
+  margin:0 auto;
+  font-size: 18px;
+}
+.searched__all{
+ background-color: white;
+ border-radius: 10px;
+}
+.plusclass{
+  font-size: 10px;
+  width: 80%;
+  margin:0 auto;
+  display: none;
+  color: red;
+}
+.result__zero{
+  display: none;
+}
+.result__first{
+  width: 5%;
+  text-align: center;
+}
+.result__second{
+  width: 15%;
+}
+.result__third{
+  width: 50%;
+}
+.result__fours{
+  width: 15%;
+}
+.result__five{
+  width: 15%;
+}
+.amadeus{
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.amadeus__label{
+  font-size: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+.allsearch{
+  width: 80%;
+  margin:0 auto;
+  font-size: 15px;
+}
+.submit__new{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 16pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #f5fffa;     /* 背景色     */
+    color         : black;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #000066;    /* 枠の指定 */
+    border-radius: 10px;
+  }
+  .submit__button{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .submit__new:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #000066;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+  .submit__question{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 1pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 12px 12px;   /* 余白       */
+    background    : #f5fffa;     /* 背景色     */
+    color         : black;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #000066;    /* 枠の指定 */
+    border-radius: 10px;
+    margin-top   :15px;
+  }
+  .submit__question:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         : #000066;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+  }
+.main__title{
+  text-align: center;
+}
+.bodytag{
+  width: 70%;
+  text-align: left;
+  margin:0 auto;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+body{
+  background-color: #f5f5f5;
+}
+.amadeus__comand{
+  margin:0 auto;
+  text-align: center;
+}
+
+.search__comand{
+  text-align: center;
+}
+.form-group{
+  text-align: center;
+}
+.form-control{
+  width: 500px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+table{
+  width: 80%;
+  margin:0 auto;
+}
+
+#error_explanation{
+  text-align: center;
+  margin:0 auto;
+}
+.field_with_errors{
+  margin:0 auto;
+}

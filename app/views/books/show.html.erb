@@ -1,0 +1,21 @@
+<body>
+  <div id="main">
+    <div><h2>アマデウス入力コマンド練習問題<h2></div>
+    <div id="content"> 
+    <%= form_with url: check_book_path(@randam_book), method: :get, id:"form" do |form| %>
+      <p id="yomi">問題</p>
+      <div><%= @randam_book.question%></div>
+      <%= form.text_field :answer, val:"text", id:"text", placeholder:'スペースは入れないでください'%>
+
+      <div id="mondai">
+
+       <input type="submit" value="回答する" id="send" class="submit__question">
+       <div><p id="char-2" class="text default">答えを見る</p>
+       <p id="char-1" class="answer" ><%= @randam_book.answer%></p> </div>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</body>
+
+

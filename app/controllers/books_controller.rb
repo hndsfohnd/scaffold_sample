@@ -74,6 +74,7 @@ class BooksController < ApplicationController
       @book = Book.find(params[:id])
     end
 
+
     # Only allow a list of trusted parameters through.
     def book_params
       params.require(:book).permit(:question,:answer)

@@ -1,24 +1,22 @@
 # README
+## amadeusコマンド検索
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+- フライト・ホテル予約端末システムであるアマデウス・インフィニ・アクセスのコード比較の登録と検索が行える。
+- amadeusのコマンド問題登録と回答が行える。
 
-Things you may want to cover:
+## 本番環境
+  - Herokuでのデプロイ(https://amadeuscommandsearch.herokuapp.com/books)
 
-* Ruby version
+## 制作背景
+ - 社内で利用していた予約端末システムであるインフィニとアクセスの代わりに、アマデウスを取り入れることになったため、弊社社員を対象に業務効率化を目的に作ったアプリである。（インフィニやアクセスのコマンドは覚えているが、アマデウスのコマンドがわからない際に検索をかけることができる）
+ - 問題の作成・回答ができるため、他の便利なコマンドも学ぶことができる。
+ 
+## 工夫したポイント
+ - ユーザビリティーを考え、AJAXを取り入れた実装を行った。（非同期通信・インクリメンタルサーチ機能）
 
-* System dependencies
+## 使用技術(開発環境)
+RAILS JQUERY (ruby2.5.1 rails5.2.4)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 課題や今後実装したい機能
+複数検索機能の追加

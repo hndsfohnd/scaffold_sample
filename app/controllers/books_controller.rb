@@ -4,7 +4,8 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-    @books = Book.find(1)
+    @books = Book.all
+    @randam_book = @books.sample
   end
 
   # GET /books/1

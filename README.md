@@ -11,11 +11,28 @@
 ## 制作背景
  - 社内で利用していた予約端末システムであるインフィニとアクセスの代わりに、アマデウスを取り入れることになったため、弊社社員を対象に業務効率化を目的に作ったアプリである。（インフィニやアクセスのコマンドは覚えているが、アマデウスのコマンドがわからない際に検索をかけることができる）
  - 問題の作成・回答ができるため、他の便利なコマンドも学ぶことができる。
- 
+
+## テーブル
+
+searchテーブル
+|Column|Type|Options|
+|------|----|-------|
+|amadeus|string|null: false|
+|description|string|null: false|
+|axess|string|
+|infini|string|
+
+bookテーブル
+|Column|Type|Options|
+|------|----|-------|
+|question|string|null: false|
+|answer|string|null: false|
+
+
 ## 工夫したポイント
  - ユーザビリティーを考え、AJAXを取り入れた実装を行った。（非同期通信・インクリメンタルサーチ機能）
 
-## 使用技術(開発環境)
+## 開発環境
 RAILS JQUERY (ruby2.5.1 rails5.2.4)
 
 ## 課題や今後実装したい機能

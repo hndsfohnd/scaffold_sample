@@ -6,7 +6,7 @@
 - amadeusのコマンド問題登録と回答が行える。
 
 ## 本番環境
-  - Herokuでのデプロイ(https://amadeuscommandsearch.herokuapp.com/books)
+  - Herokuでのデプロイ　　https://amadeuscommandsearch.herokuapp.com/books
 
 ## 制作背景
  - 社内で利用していた予約端末システムであるインフィニとアクセスの代わりに、アマデウスを取り入れることになったため、弊社社員を対象に業務効率化を目的に作ったアプリである。（インフィニやアクセスのコマンドは覚えているが、アマデウスのコマンドがわからない際に検索をかけることができる）
